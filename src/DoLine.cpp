@@ -1,8 +1,8 @@
 #include <Arduino.h>
 #include <QTRSensors.h>
-
+#include <Servo.h> //lôi nhớ cài thư viện
 QTRSensors qtr;
-
+Servo steeringServo;
 const uint8_t pwmRight = 10; // PB4
 const uint8_t dirRight = 21; // PD0
 const uint8_t pwmLeft = 13; // PB7
@@ -36,4 +36,4 @@ void loop()
 
   Serial.println();
   delay(250);
-}git checkout -b feature/new-feature
+}
